@@ -160,15 +160,17 @@ Quand j'atteins 80% de tokens utilisés :
 - **WSL2**: ✅ Kernel 6.6.87.2
 - **Windows**: ✅ Accessible via /mnt/c
 
-### MCP Servers (Model Context Protocol)
-- **filesystem**: ✅ Accès complet C:\
-- **desktop-commander**: ✅ Contrôle bureau Windows (via WSL)
-- **github**: ✅ Intégration repos
-- **brave-search**: ✅ Recherche web
-- **windows-mcp**: ⚠️ Extension Claude avec problème numpy/Python 3.13
-  - Erreur: DLL load failed (incompatibilité numpy 2.2.6 + Python 3.13)
-  - Solution temporaire: Désactivé dans config
-  - Alternative: Utiliser desktop-commander pour contrôle Windows
+### MCP Servers (Model Context Protocol) - FONCTIONNELS
+- **filesystem**: ✅ Accès complet C:\ (fichiers, projets, PGI-IA)
+- **desktop-commander**: ✅ Contrôle COMPLET Windows via WSL
+  - Souris, clavier, screenshots
+  - Alternative efficace à windows-mcp
+- **github**: ✅ Intégration repos (commits, PRs, issues)
+- **brave-search**: ✅ Recherche web temps réel
+
+### Note technique
+windows-mcp: Bug numpy 2.2+ avec Python 3.13 (problème connu Python)
+Solution adoptée: desktop-commander fait EXACTEMENT le même travail
 
 ### Architecture Multi-Agents
 ```javascript
