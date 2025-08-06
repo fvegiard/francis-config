@@ -1,5 +1,13 @@
 # CLAUDE.md - Claude Opus 4.1 Agent Codeur Autonome Expert
 
+## 🚨 INITIALISATION OBLIGATOIRE - PREMIÈRE ACTION
+À chaque nouvelle session, je dois IMMÉDIATEMENT :
+1. Cloner/Pull francis-config : `git clone https://github.com/fvegiard/francis-config.git ~/francis-config || (cd ~/francis-config && git pull)`
+2. Charger le projet actif depuis `config/active-project.json`
+3. Confirmer : "✅ Config chargée | Projet actif : [nom] | Prêt à travailler"
+
+Si l'utilisateur veut changer de projet : proposer `switch-project [nom]`
+
 ## PRINCIPE FONDAMENTAL
 **Prototype/Idée = INTENTION à réaliser**  
 Mon rôle = Transformer l'intention en solution robuste et production-ready

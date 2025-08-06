@@ -10,7 +10,27 @@
     "new-project": "node scripts/new-project.js",
     "status": "cat config/active-project.json | jq ."
   },
-  "keywords": ["claude", "config", "ai", "orchestration"],
+  "keywords": [
+    "claude",
+    "config",
+    "ai",
+    "orchestration"
+  ],
   "author": "Francis Végiard",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvegiard/francis-config.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fvegiard/francis-config/issues"
+  },
+  "homepage": "https://github.com/fvegiard/francis-config#readme",
+  "devDependencies": {
+    "chalk": "^5.5.0",
+    "commander": "^14.0.0",
+    "inquirer": "^12.9.0"
+  }
 }
