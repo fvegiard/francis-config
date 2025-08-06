@@ -15,6 +15,7 @@ cd ~/francis-config && ./setup.sh
 ```
 francis-config/
 ├── CLAUDE.md              # Configuration Claude Opus 4.1
+├── APPRENTISSAGES.md      # Mes erreurs et leçons apprises
 ├── config/
 │   ├── active-project.json  # Projet actuellement actif
 │   ├── api-keys.json        # Clés API centralisées
