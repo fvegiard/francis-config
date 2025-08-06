@@ -1,0 +1,25 @@
+{
+  "environment": {
+    "os": "WSL2 Ubuntu 24.04.3 LTS",
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "hardware": {
+      "cpu": "Intel Core Ultra 9 185H",
+      "cores": 16,
+      "ram": "32GB",
+      "gpu": "RTX 4060"
+    }
+  },
+  "tools": {
+    "node": "22.18.0",
+    "npm": "11.5.2",
+    "docker": "28.3.2",
+    "dockerCompose": "2.38.2",
+    "gh": "2.45.0"
+  },
+  "preferences": {
+    "autoSync": true,
+    "defaultEditor": "code",
+    "language": "fr",
+    "theme": "dark"
+  }
+}

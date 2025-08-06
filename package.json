@@ -1,0 +1,16 @@
+{
+  "name": "francis-config",
+  "version": "1.0.0",
+  "description": "Configuration centralisée Claude + Projets",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "switch-project": "bash scripts/switch-project.sh",
+    "sync": "bash scripts/sync.sh",
+    "list-projects": "bash scripts/switch-project.sh",
+    "new-project": "node scripts/new-project.js",
+    "status": "cat config/active-project.json | jq ."
+  },
+  "keywords": ["claude", "config", "ai", "orchestration"],
+  "author": "Francis Végiard",
+  "license": "MIT"
+}

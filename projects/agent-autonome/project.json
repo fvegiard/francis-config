@@ -1,0 +1,44 @@
+{
+  "name": "Agent Autonome",
+  "version": "1.0.0",
+  "description": "Container Docker anti-complexité avec agents IA orchestrés",
+  "status": "development",
+  "completion": 40,
+  "stack": {
+    "runtime": ["Docker", "Python"],
+    "ai": ["Ollama", "Dolphin-Mixtral", "Dolphin3-R1", "DeepSeek-Coder"],
+    "orchestration": ["Claude Opus 4.1"],
+    "interface": ["CLI", "Web UI"]
+  },
+  "paths": {
+    "local": "~/claude-orchestrator-system",
+    "repo": "https://github.com/fvegiard/agent-autonome"
+  },
+  "services": {
+    "ollama": "http://localhost:11434",
+    "webui": "http://localhost:3000"
+  },
+  "philosophy": {
+    "core": "Simplicité maximale, complexité zéro",
+    "principles": [
+      "Exécution autonome complète",
+      "Pas de questions inutiles",
+      "Solutions finies et testées",
+      "Documentation automatique"
+    ]
+  },
+  "agents": {
+    "dolphin-mixtral": {
+      "role": "Créativité et génération variée",
+      "memory": "24GB"
+    },
+    "dolphin3-r1": {
+      "role": "Logique et raisonnement step-by-step",
+      "memory": "13GB"
+    },
+    "deepseek-coder": {
+      "role": "Expertise code et refactoring",
+      "memory": "8GB"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "PGI-AI",
+  "version": "4.3.0",
+  "description": "Système de gestion de projets électriques avec reconnaissance IA",
+  "status": "production-ready",
+  "completion": 95,
+  "stack": {
+    "backend": ["FastAPI", "PostgreSQL", "SQLAlchemy"],
+    "frontend": ["React", "TypeScript", "TailwindCSS"],
+    "ai": ["TensorFlow", "OpenCV", "YOLOv8"],
+    "devops": ["Docker", "GitHub Actions", "Nginx"]
+  },
+  "paths": {
+    "local": "C:/Users/fvegi/Documents/PGI-AI",
+    "wsl": "/mnt/c/Users/fvegi/Documents/PGI-AI",
+    "repo": "https://github.com/fvegiard/pgi-ai"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "pgi_production",
+    "user": "pgi_user"
+  },
+  "endpoints": {
+    "api": "http://localhost:8000",
+    "frontend": "http://localhost:3000",
+    "docs": "http://localhost:8000/docs"
+  },
+  "features": {
+    "completed": [
+      "Gestion projets électriques",
+      "Devis automatiques",
+      "Planning ressources",
+      "Reconnaissance matériel IA",
+      "Export PDF/Excel",
+      "Dashboard analytics"
+    ],
+    "pending": [
+      "Module facturation avancée",
+      "Application mobile",
+      "Intégration ERP"
+    ]
+  }
+}
