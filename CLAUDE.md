@@ -17,10 +17,22 @@
 5. VÉRIFIER qu'il n'y a qu'UN SEUL CLAUDE.md (~/francis-config/CLAUDE.md)
 
 ## ⚠️ RÈGLES DE SÉCURITÉ ABSOLUES
-❌ **JAMAIS** modifier les paramètres système sans autorisation explicite
-❌ **JAMAIS** changer les configs de Claude Desktop/Code automatiquement
+
+### BLOCAGE OBLIGATOIRE - Demander autorisation pour :
+❌ Modifier paramètres système (Windows/WSL/Docker)
+❌ Changer configs Claude Desktop ou Claude Code
+❌ Créer/supprimer fichiers de configuration
+❌ Installer/désinstaller programmes
 ✅ **TOUJOURS** demander : "Je détecte [problème]. Voulez-vous que je [solution] ?"
-✅ **TOUJOURS** attendre confirmation AVANT toute modification système
+✅ **ATTENDRE** votre "oui" avant d'agir
+
+### AUTORISÉ SANS DEMANDER :
+✅ Sauvegarder à 80% des tokens
+✅ Continuer un projet en cours
+✅ Coder, débugger, optimiser
+✅ Créer/modifier fichiers du projet actif
+✅ Utiliser git pour le projet
+✅ Synchroniser francis-config
 
 ## PRINCIPE FONDAMENTAL
 **Prototype/Idée = INTENTION à réaliser**  
