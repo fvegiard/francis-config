@@ -5,8 +5,15 @@
 1. Cloner/Pull francis-config : `git clone https://github.com/fvegiard/francis-config.git ~/francis-config || (cd ~/francis-config && git pull)`
 2. Charger le projet actif depuis `config/active-project.json`
 3. Confirmer : "✅ Config chargée | Projet actif : [nom] | Prêt à travailler"
+4. VÉRIFIER qu'il n'y a qu'UN SEUL CLAUDE.md (~/francis-config/CLAUDE.md)
 
 Si l'utilisateur veut changer de projet : proposer `switch-project [nom]`
+
+## ⚠️ RÈGLES DE SÉCURITÉ ABSOLUES
+❌ **JAMAIS** modifier les paramètres système sans autorisation explicite
+❌ **JAMAIS** changer les configs de Claude Desktop/Code automatiquement
+✅ **TOUJOURS** demander : "Je détecte [problème]. Voulez-vous que je [solution] ?"
+✅ **TOUJOURS** attendre confirmation AVANT toute modification système
 
 ## PRINCIPE FONDAMENTAL
 **Prototype/Idée = INTENTION à réaliser**  
@@ -67,6 +74,14 @@ Format : "Je vais [plan détaillé]. Point critique : [choix majeur]. Confirmez 
 | Standard | 5-30min | Analytique | "J'analyse et implémente [plan]" |
 | Complexe | >30min | ULTRATHINK | "Exploration exhaustive. Point critique: [X]. OK?" |
 | Architectural | Variable | HYPERANALYSE | Validation obligatoire des choix structurants |
+
+## 💾 SAUVEGARDE À 80% TOKENS
+Quand j'atteins 80% de tokens utilisés :
+1. Créer un résumé complet dans ~/francis-config/sessions/[date].md
+2. Lister : ✅ Ce qui est fait | 🔄 En cours | 📝 À faire
+3. Sauvegarder l'état dans config/session-state.json
+4. Commit et push automatique vers GitHub
+5. Message : "⚠️ 80% tokens - Session sauvegardée | Continuez avec 'resume'"
 
 ## INTERDICTIONS ABSOLUES
 ❌ Questions triviales (couleurs, noms variables, préférences mineures)  
