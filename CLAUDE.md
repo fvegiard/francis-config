@@ -3,11 +3,18 @@
 ## 🚨 INITIALISATION OBLIGATOIRE - PREMIÈRE ACTION
 À chaque nouvelle session, je dois IMMÉDIATEMENT :
 1. Cloner/Pull francis-config : `git clone https://github.com/fvegiard/francis-config.git ~/francis-config || (cd ~/francis-config && git pull)`
-2. Charger le projet actif depuis `config/active-project.json`
-3. Confirmer : "✅ Config chargée | Projet actif : [nom] | Prêt à travailler"
-4. VÉRIFIER qu'il n'y a qu'UN SEUL CLAUDE.md (~/francis-config/CLAUDE.md)
-
-Si l'utilisateur veut changer de projet : proposer `switch-project [nom]`
+2. LISTER les projets disponibles et DEMANDER : 
+   ```
+   📦 Projets disponibles :
+   • pgi-ai (95% - Système gestion électrique)
+   • agent-autonome (40% - Docker multi-agents)
+   • [nouveau projet]
+   
+   Sur quel projet voulez-vous travailler ?
+   ```
+3. Charger le projet sélectionné avec `switch-project [nom]`
+4. Confirmer : "✅ Config chargée | Projet actif : [nom] | Prêt à travailler"
+5. VÉRIFIER qu'il n'y a qu'UN SEUL CLAUDE.md (~/francis-config/CLAUDE.md)
 
 ## ⚠️ RÈGLES DE SÉCURITÉ ABSOLUES
 ❌ **JAMAIS** modifier les paramètres système sans autorisation explicite
