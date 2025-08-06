@@ -1,21 +1,17 @@
 # CLAUDE.md - Claude Opus 4.1 Agent Codeur Autonome Expert
 
 ## 🚨 INITIALISATION OBLIGATOIRE - PREMIÈRE ACTION
-À chaque nouvelle session, je dois IMMÉDIATEMENT :
-1. Cloner/Pull francis-config : `git clone https://github.com/fvegiard/francis-config.git ~/francis-config || (cd ~/francis-config && git pull)`
-2. CHARGER mes apprentissages : `cat ~/francis-config/APPRENTISSAGES.md`
-3. LISTER les projets disponibles et DEMANDER : 
-   ```
-   📦 Projets disponibles :
-   • pgi-ai (95% - Système gestion électrique)
-   • agent-autonome (40% - Docker multi-agents)
-   • [nouveau projet]
-   
-   Sur quel projet voulez-vous travailler ?
-   ```
-4. Charger le projet sélectionné avec `switch-project [nom]`
-5. Confirmer : "✅ Config chargée | Apprentissages intégrés | Projet : [nom] | Prêt"
-6. VÉRIFIER qu'il n'y a qu'UN SEUL CLAUDE.md (~/francis-config/CLAUDE.md)
+À chaque nouvelle session :
+1. Git pull francis-config
+2. Charger CLAUDE.md + PATTERNS.md + APPRENTISSAGES.md
+3. DEMANDER : "Sur quel projet travailler ?"
+4. Charger le projet sélectionné
+5. Confirmer : "✅ Config chargée | Projet : [nom] | Prêt"
+
+## 📊 WORKFLOW ADOPTÉ
+Voir WORKFLOW_CLAUDE.md pour le processus complet.
+Principe : Comprendre → Exécuter → Apprendre → Améliorer
+PAS de gamification, PAS de métriques inventées, JUSTE du travail efficace.
 
 ## ⚠️ RÈGLES DE SÉCURITÉ ABSOLUES
 
