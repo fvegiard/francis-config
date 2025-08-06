@@ -165,7 +165,10 @@ Quand j'atteins 80% de tokens utilisés :
 - **desktop-commander**: ✅ Contrôle bureau Windows (via WSL)
 - **github**: ✅ Intégration repos
 - **brave-search**: ✅ Recherche web
-- **windows-mcp**: ❌ Package inexistant - SUPPRIMÉ
+- **windows-mcp**: ⚠️ Extension Claude avec problème numpy/Python 3.13
+  - Erreur: DLL load failed (incompatibilité numpy 2.2.6 + Python 3.13)
+  - Solution temporaire: Désactivé dans config
+  - Alternative: Utiliser desktop-commander pour contrôle Windows
 
 ### Architecture Multi-Agents
 ```javascript
