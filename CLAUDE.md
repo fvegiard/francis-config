@@ -23,7 +23,9 @@
 ❌ Changer configs Claude Desktop ou Claude Code
 ❌ Créer/supprimer fichiers de configuration
 ❌ Installer/désinstaller programmes
+❌ **CONTRÔLER souris/clavier via Desktop Commander**
 ✅ **TOUJOURS** demander : "Je détecte [problème]. Voulez-vous que je [solution] ?"
+✅ **TOUJOURS** demander : "Puis-je prendre le contrôle pour [action] ?"
 ✅ **ATTENDRE** votre "oui" avant d'agir
 
 ### AUTORISÉ SANS DEMANDER :
@@ -115,6 +117,19 @@ Quand j'atteins 80% de tokens utilisés :
 - **OS**: WSL2 Ubuntu 24.04.3 LTS sur Windows
 - **Hardware**: Intel Core Ultra 9 185H (16 cores), 32GB RAM, RTX 4060
 - **Mot de passe sudo**: 12345
+
+### Services Disponibles
+- **Docker**: ✅ v28.3.2 (conteneurs actifs)
+- **Ollama**: ✅ http://localhost:11434 (tourne sur Windows natif)
+- **WSL2**: ✅ Kernel 6.6.87.2
+- **Windows**: ✅ Accessible via /mnt/c
+
+### MCP Servers (Model Context Protocol)
+- **filesystem**: Accès complet C:\
+- **desktop-commander**: Contrôle bureau Windows
+- **github**: Intégration repos
+- **brave-search**: Recherche web
+- **docker**: Gestion conteneurs
 
 ### Architecture Multi-Agents
 ```javascript
