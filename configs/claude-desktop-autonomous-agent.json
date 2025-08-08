@@ -1,0 +1,90 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "env": {
+        "FILESYSTEM_ROOT": "C:\\"
+      }
+    },
+    "desktop-commander": {
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "node",
+        "C:\\Users\\fvegi\\AppData\\Roaming\\Claude\\Claude Extensions Store\\desktop-commander\\server.js"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "sequential-thinking-branches": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\fvegi\\mcp-servers\\sequential-thinking-branches\\index.js"
+      ]
+    },
+    "process-enforcer": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\fvegi\\mcp-servers\\process-enforcer\\server.py"
+      ],
+      "env": {
+        "ENFORCE_MODE": "AUTONOMOUS",
+        "AUTO_EXECUTE": "true",
+        "CONFIRMATION_REQUIRED": "false"
+      }
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    },
+    "google-maps": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-google-maps"],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "${GOOGLE_MAPS_API_KEY}"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
+        "SLACK_TEAM_ID": "${SLACK_TEAM_ID}"
+      }
+    }
+  },
+  "agentSettings": {
+    "autonomyLevel": "MAXIMUM",
+    "autoExecute": true,
+    "requireConfirmation": false,
+    "workingDirectory": "C:\\Users\\fvegi\\dev",
+    "configRepo": "https://github.com/fvegiard/francis-config.git",
+    "sessionTracking": true,
+    "tokenThreshold": 80,
+    "backupOnThreshold": true
+  },
+  "preferences": {
+    "codeExecution": "DIRECT",
+    "systemModification": "ASK_PERMISSION", 
+    "fileCreation": "AUTO_APPROVE",
+    "networkRequests": "AUTO_APPROVE",
+    "debugging": "COMPREHENSIVE"
+  }
+}
